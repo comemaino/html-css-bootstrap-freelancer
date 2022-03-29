@@ -39,8 +39,8 @@ img {
 
 /* HEADER */
 nav {
-    height: 3rem;
-    line-height: 3rem;
+    height: 4rem;
+    line-height: 4rem;
     background-color: var(--secondary-clr);
 }
 
@@ -61,7 +61,6 @@ section {
 
 /* MAIN */
 /* PORTFOLIO */
-
 .portfolio h2,
 .contact h2 {
     color: var(--dark-text-clr);
@@ -69,12 +68,20 @@ section {
 
 .img-wrapper {
     width: 100%;
-
     background-color: var(--secondary-clr-light);
 }
 
 /* CONTACT */
-
 .contact .ms_container {
     padding: 0 1rem;
+}
+
+/* FOOTER */
+.footer-top {
+    background-color: var(--secondary-clr-light);
+}
+
+.footer-bottom {
+    height: 5rem;
+    background-color: var(--secondary-clr);
 }
