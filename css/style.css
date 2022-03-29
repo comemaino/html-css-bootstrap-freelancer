@@ -28,19 +28,53 @@ img {
     width: 100%;
 }
 
+.ms_container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.button {
+    background-color: var(--primary-clr);
+}
+
 /* HEADER */
-header {
-    height: 4rem;
-    line-height: 4rem;
+nav {
+    height: 3rem;
+    line-height: 3rem;
     background-color: var(--secondary-clr);
 }
 
+section {
+    padding: 2rem 0;
+}
+
 /* JUMBOTRON */
-.jumbotron {
+.jumbotron,
+.about {
     background-color: var(--primary-clr);
 }
 
 .jumbo-img {
     margin: 0 auto;
     width: 6rem;
+}
+
+/* MAIN */
+/* PORTFOLIO */
+
+.portfolio h2,
+.contact h2 {
+    color: var(--dark-text-clr);
+}
+
+.img-wrapper {
+    width: 100%;
+
+    background-color: var(--secondary-clr-light);
+}
+
+/* CONTACT */
+
+.contact .ms_container {
+    padding: 0 1rem;
 }
