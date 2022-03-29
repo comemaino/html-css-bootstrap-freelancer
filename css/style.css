@@ -1,0 +1,46 @@
+:root {
+    --light-tect-clr: #ffffff;
+    --dark-text-clr: #333333;
+    --primary-clr: #1abc9c;
+    --secondary-clr: #2c3e50;
+    --secondary-clr-light: #3a546d;
+}
+
+/* COMMON */
+body {
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-tect-clr);
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+header {
+    height: 4rem;
+    line-height: 4rem;
+    background-color: var(--secondary-clr);
+}
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: var(--primary-clr);
+}
+
+.jumbo-img {
+    margin: 0 auto;
+    width: 6rem;
+}
