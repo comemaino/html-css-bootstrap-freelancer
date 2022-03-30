@@ -30,6 +30,10 @@ a {
     color: var(--ms_light-text-clr);
 }
 
+a:hover {
+    color: var(--ms_primary-clr);
+}
+
 img {
     width: 100%;
 }
@@ -74,9 +78,15 @@ h2::before {
     width: 75%;
 }
 
+/* BUTTONS */
 .ms_btn-light {
     border: 1px solid var(--ms_light-text-clr);
     color: var(--ms_light-text-clr);
+}
+
+.ms_btn-light:hover {
+    color: var(--ms_primary-clr);
+    background-color: var(--ms_light-text-clr);
 }
 
 .ms_btn-primary {
@@ -84,6 +94,11 @@ h2::before {
     color: var(--ms_light-text-clr);
 }
 
+.ms_btn-primary:hover {
+    background-color: inherit;
+    color: var(--ms_primary-clr);
+    border: 1px solid var(--ms_primary-clr);
+}
 
 /* HEADER */
 nav {
@@ -128,10 +143,33 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 4rem;
 }
+
 .img-wrapper {
+    position: relative;
     border-radius: .5rem;
     overflow: hidden;
-   
+}
+
+.img-wrapper::before {
+    content: "+";
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+    font-size: 7rem;
+    color: var(--ms_light-text-clr);
+    background-color: #0005;
+    opacity: 0;
+
+    transition: all 200ms;
+}
+
+.img-wrapper:hover.img-wrapper::before {
+    opacity: 1;
 }
 
 /* CONTACT */
@@ -152,6 +190,7 @@ label.ms_label {
 
 /* FOOTER */
 .footer-top {
+    padding: 1rem 0;
     background-color: var(--ms_secondary-clr-light);
 }
 
@@ -164,6 +203,10 @@ label.ms_label {
     border-radius: 50%;
 }
 
+.footer-top i:hover {
+    border-color: var(--ms_primary-clr);
+}
+
 .footer-bottom {
     height: 5rem;
     line-height: 5rem;
@@ -173,6 +216,10 @@ label.ms_label {
 
 .footer-content p a {
     color: var(--ms_primary-clr);
+}
+
+.footer-content p a:hover {
+    color: var(--ms_light-text-clr);
 }
 
 h3 {
