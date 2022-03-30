@@ -63,6 +63,12 @@ h2::before {
     -webkit-text-stroke: 4px currentColor;
 }
 
+.about h2::before,
+.contact h2::before {
+    padding: 0 1rem;
+    border-width: 0 90px;
+}
+
 .ms_container {
     margin: 0 auto;
     width: 75%;
