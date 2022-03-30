@@ -12,6 +12,7 @@ html {
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--ms_light-text-clr);
 }
 
@@ -34,7 +35,32 @@ img {
 }
 
 section {
-    padding: 2rem 0;
+    padding: 2.5rem 0;
+}
+
+h1,
+h2 {
+    position: relative;
+    margin: 1.5rem 0 3rem ;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h1::before,
+h2::before {
+    content: "\2605";
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    border: solid currentColor;
+    border-width: 0 150px;
+    padding: 0 2rem;
+    font-size: 2rem;
+    line-height: .25rem;
+    
+    -webkit-text-stroke: 4px currentColor;
 }
 
 .ms_container {
@@ -52,11 +78,20 @@ section {
     color: var(--ms_light-text-clr);
 }
 
+
 /* HEADER */
 nav {
     height: 4rem;
     line-height: 4rem;
     background-color: var(--ms_secondary-clr);
+}
+
+.logo-wrapper {
+    font-size: 1.5rem;
+}
+
+.menu-wrapper {
+    font-size: .85rem;
 }
 
 /* MAIN */
@@ -71,10 +106,22 @@ section:nth-child(even) {
 /* JUMBOTRON */
 .jumbo-img {
     margin: 0 auto;
-    width: 6rem;
+    width: 200px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.jumbotron p {
+    font-size: 1.4rem;
 }
 
 /* PORTFOLIO */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
 .img-wrapper {
     border-radius: .5rem;
     overflow: hidden;
@@ -102,8 +149,27 @@ label.ms_label {
     background-color: var(--ms_secondary-clr-light);
 }
 
+.footer-top i {
+    margin: 0 .3rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border: 1px solid var(--ms_light-text-clr);
+    border-radius: 50%;
+}
+
 .footer-bottom {
     height: 5rem;
     line-height: 5rem;
     background-color: var(--ms_secondary-clr);
+    font-size: .8rem;
+}
+
+.footer-content p a {
+    color: var(--ms_primary-clr);
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
