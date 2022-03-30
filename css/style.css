@@ -1,14 +1,18 @@
 :root {
-    --light-tect-clr: #ffffff;
-    --dark-text-clr: #333333;
-    --primary-clr: #1abc9c;
-    --secondary-clr: #2c3e50;
-    --secondary-clr-light: #3a546d;
+    --ms_light-text-clr: #ffffff;
+    --ms_dark-text-clr: #333333;
+    --ms_primary-clr: #1abc9c;
+    --ms_secondary-clr: #2c3e50;
+    --ms_secondary-clr-light: #3a546d;
 }
 
 /* COMMON */
+html {
+    font-size: 100%;
+}
+
 body {
-    color: #ffffff;
+    color: var(--ms_light-text-clr);
 }
 
 ul {
@@ -17,71 +21,89 @@ ul {
 
 li {
     display: inline-block;
+    margin-left: 1rem;
 }
 
 a {
     text-decoration: none;
-    color: var(--light-tect-clr);
+    color: var(--ms_light-text-clr);
 }
 
 img {
     width: 100%;
 }
 
-.ms_container {
-    margin: 0 auto;
-    width: 70%;
+section {
+    padding: 2rem 0;
 }
 
-.button {
-    background-color: var(--primary-clr);
+.ms_container {
+    margin: 0 auto;
+    width: 75%;
+}
+
+.ms_btn-light {
+    border: 1px solid var(--ms_light-text-clr);
+    color: var(--ms_light-text-clr);
+}
+
+.ms_btn-primary {
+    background-color: var(--ms_primary-clr);
+    color: var(--ms_light-text-clr);
 }
 
 /* HEADER */
 nav {
     height: 4rem;
     line-height: 4rem;
-    background-color: var(--secondary-clr);
+    background-color: var(--ms_secondary-clr);
 }
 
-section {
-    padding: 2rem 0;
+/* MAIN */
+section:nth-child(odd) {
+    background-color: var(--ms_primary-clr);
+}
+
+section:nth-child(even) {
+    color: var(--ms_dark-text-clr);
 }
 
 /* JUMBOTRON */
-.jumbotron,
-.about {
-    background-color: var(--primary-clr);
-}
-
 .jumbo-img {
     margin: 0 auto;
     width: 6rem;
 }
 
-/* MAIN */
 /* PORTFOLIO */
-.portfolio h2,
-.contact h2 {
-    color: var(--dark-text-clr);
-}
-
 .img-wrapper {
-    width: 100%;
-    background-color: var(--secondary-clr-light);
+    border-radius: .5rem;
+    overflow: hidden;
+   
 }
 
 /* CONTACT */
-.contact .ms_container {
-    padding: 0 1rem;
+.ms_form-control {
+    border: solid #ddd;
+    border-width: 0 0 2px 0;
+    border-radius: 0;
+}
+
+.ms_form-control:focus {
+    border-color: #ddd;
+    box-shadow: none;
+}
+
+label.ms_label {
+    padding-left: 0;
 }
 
 /* FOOTER */
 .footer-top {
-    background-color: var(--secondary-clr-light);
+    background-color: var(--ms_secondary-clr-light);
 }
 
 .footer-bottom {
     height: 5rem;
-    background-color: var(--secondary-clr);
+    line-height: 5rem;
+    background-color: var(--ms_secondary-clr);
 }
